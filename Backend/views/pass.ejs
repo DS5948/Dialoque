@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pass.css">
+</head>
+<body>
+    <div class="logo">
+        <div class="logo-img">
+          <img src="Images/14463.jpg">
+        </div>
+        <div class="title">
+          <h1>Dialoque</h1>
+        </div>
+      </div>
+    <div class="container">
+        <div class="verification-card" style="background-color: white;">
+            <img src="Images/icons8-password-key-64 (1).png">
+            <h1>Create Password</h1>
+            <p>Please create a new password for your <span>Dialoque</span> account</p>
+            <form action="/create-password" method="post">
+                <input type="hidden" name="email" value="<%= email %>">
+                <input type="password" name="pass1" placeholder="Create Password">
+                <input type="password" name="pass2" placeholder="Confirm Password">
+                <button type="submit">Sign Up</button>
+            </form>
+            <% if (errorMessage) { %>
+              <p style="color: red;"><%= errorMessage %></p>
+          <% } %>
+        </div>
+    </div>
+</body>
+</html>

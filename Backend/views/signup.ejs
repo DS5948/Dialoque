@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up/Sign-in</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="logo">
+        <div class="logo-img">
+          <img src="Images/14463.jpg">
+        </div>
+        <div class="title">
+          <h1>Dialoque</h1>
+        </div>
+      </div>
+    <div class="container">
+        
+            <div class="card1">
+                <div class="card" id="card1">
+                    <div class="head">
+                        <h1>Welcome Back!</h1>
+                    </div>
+                    <div class="text">
+                        <p>To keep connected with us please login with your personal info.</p>
+                    </div>
+                    <div id="btn1">
+                        <button>SIGN IN</button>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <div class="head">
+                        <h1>Hello, Friend!</h1>
+                    </div>
+                    <div class="text">
+                        <p>Enter your personal details and start journey with us</p>
+                    </div>
+                    <div id="btn2">
+                        <button>SIGN UP</button>
+                    </div>
+                </div>
+               
+                <div class="signin test1" id="signin">
+                    <div class="head">
+                        <h1>Sign in</h1>
+                    </div>
+                    <div class="social-icons">
+                        <a><i class="fab fa-facebook-f"></i></a>
+                        <a><i class="fab fa-google-plus-g"></i></a>
+                        <a><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="text">
+                        <p>or use your account</p>
+                    </div>
+                    <form action="/signin" method="post">
+                        <input type="email" placeholder="Email" autocomplete="off" name="email">
+                        <input type="password" placeholder="Password" autocomplete="off" name="password">
+                        <button>SIGN IN</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="card2">
+                    
+                <div class="signup" id="signup">
+                    <div class="head">
+                        <h1>Create Account</h1>
+                    </div>
+                    <div class="social-icons">
+                        <a><i class="fab fa-facebook-f"></i></a>
+                        <a><i class="fab fa-google-plus-g"></i></a>
+                        <a><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="text">
+                        <p>or use your email for registration</p>
+                    </div>
+                    <form action="/signup" method="post">
+                        <input type="text" placeholder="Full Name" name="name" autocomplete="off">
+                        <input type="text" placeholder="Username" autocomplete="off" name="username">
+                        <input type="email" placeholder="Email" autocomplete="off" name="email">
+                        <button>Get OTP</button>
+                    </form>
+                    <% if (errorMessage) { %>
+                        <p style="color: red;"><%= errorMessage %></p>
+                    <% } %>
+                </div>
+            </div>
+    </div>
+    <script src="js/signup.js"></script>
+</body>
+</html>

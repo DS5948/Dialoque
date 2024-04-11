@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+body{
+  background-color: #000;
+    background: url("../Images/contact2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 10%;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo-img img{
+      width: 150px;
+      height: 100px;
+      mix-blend-mode: darken;
+      margin-top: 10px;
+  }
+  .title{
+    margin-left: -30px;
+    font-size: 24px;
+  }
+  .title h1 {
+    font-weight: 100;
+  }
+  .form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 190px;
+  }
+  
+  .form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px rgb(136, 134, 134) solid;
+    display: block;
+    width: 90%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(14, 13, 13);
+  }
+  
+  .form-control input:focus,
+  .form-control input:valid {
+    outline: 0;
+    border-bottom-color: black;
+  }
+  
+  .form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    min-width: 5px;
+    color: rgb(14, 13, 13);
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .form-control input:focus+label span,
+  .form-control input:valid+label span {
+    color: rgb(0, 179, 255);
+    transform: translateY(-30px);
+  }
+  .contact-info {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 70%;
+    margin-right: -80px;
+    border-radius: 5px;
+    background-color: rgb(0, 179, 255);
+    padding: 20px;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+  .contact-info ul li{
+    list-style: none;
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    max-width: 250px;
+    overflow-wrap: break-word;
+  }
+  .social-icons i{
+    font-size: 26px;
+    transition: all 0.3s;
+  }
+  .social-icons i:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+  }
+  .icons{
+    display: flex;
+    gap: 20px;
+  }
+  .form-container {
+    width: 90%;
+    border-radius: 5px;
+    height: 100%;
+    background: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+.contact-form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: flex-end;
+    width: 45%;
+    text-align: left;
+    height: 80%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+    .contact-form button {
+    width: 120px;
+    height: 30px;
+    background: rgb(0, 179, 255);
+    border: 0;
+    outline: 0;
+    transition: all 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    background: rgb(6, 136, 192);
+    border-radius: 5px;
+}
+.form-heading h1{
+    margin-bottom: 10px;
+    color: rgb(0, 179, 255);
+    font-family: 'Montserrat',sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 90%;
+    align-items: center;
+    justify-content:left;
+    padding-left: 100px;
+}
+.message-input textarea {
+    resize: none;
+    width: 250px;
+    height: 100px;
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    /* Add spacing and styling here */
+}
+
+.form-column {
+    flex: 1;
+    /* Add spacing and styling here */
+}
+
+.form-control {
+    margin-bottom: 15px;
+    /* Add your styling here */
+}
+
+.message-input textarea {
+    width: 90%;
+    height: 180px;
+    color: black;
+    font-weight: 600;
+}

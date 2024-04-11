@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/verify.css">
+</head>
+<body>
+    <div class="logo">
+        <div class="logo-img">
+          <img src="Images/14463.jpg">
+        </div>
+        <div class="title">
+          <h1>Dialoque</h1>
+        </div>
+      </div>
+    <div class="container">
+        <div class="verification-card" style="background-color: white;">
+            <img src="Images/icons8-mobile-64.png">
+            <h1>Verification</h1>
+            <p>Please enter the otp sent to your email address</p>
+            <form action="/verify-otp" method="POST">
+                <input type="hidden" name="email" value="<%= email %>">
+                <input type="text" name="otp" placeholder="Enter OTP" required><br>
+                <button type="submit">Verify OTP</button>
+            </form>
+            <% if (errorMessage) { %>
+                <p style="color: red;"><%= errorMessage %></p>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
